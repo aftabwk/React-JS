@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-// this is the concept of React hook UseState.
-// If we use vanilla js to update ui it won't work react can manipulate DOM but it can not update UI in react.
-// To update ui we have hooks in React js. Like Use state Hook.
-// We can easily change any values by useState hook and update it in ui instantly
+// This is the concept of the React hook useState.
+// If we use vanilla JS to update the UI, it won't work. React can manipulate the DOM but cannot update the UI automatically.
+// To update the UI, we use hooks in React, like the useState hook.
+// We can easily change any value using the useState hook and have it update in the UI instantly.
 const Counter = () => {
   let [counter, setCounter] = useState(5);
   return (
