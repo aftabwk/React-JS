@@ -1,7 +1,9 @@
 function App() {
   return (
     <>
-      <h1>This is Aftab</h1>
+      <ul className="h-10 flex items-center justify-around w-full bg-cyan-600 ">
+        <li>This is My first React website</li>
+      </ul>
     </>
   );
 }
