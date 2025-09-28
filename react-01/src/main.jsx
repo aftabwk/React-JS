@@ -5,12 +5,14 @@ import App from "./App.jsx";
 import Counter from "./Counter.jsx";
 import CardListing from "./CardListing.jsx";
 import Background from "./Background.jsx";
+import PasswordGenerator from "./PasswordGenerator.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
     <Counter />
     <CardListing />
-    <Background />
+    {/* <Background /> */}
+    <PasswordGenerator />
   </StrictMode>
 );
