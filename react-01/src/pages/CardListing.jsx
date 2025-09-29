@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./assets/Card";
+import { Card } from "../assets/index";
 // We can send props by passing an object.
 // As you can see, we are calling Card and sending the object named 'value'.
 // The 'key' helps to identify cards separately.
