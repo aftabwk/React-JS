@@ -4,6 +4,7 @@ import Counter from "./Counter";
 import CurrencyConvirter from "./CurrencyConvirter";
 import PasswordGenerator from "./PasswordGenerator";
 import App from "./App";
+import Github from "./Github";
 
 export {
   Background,
@@ -12,4 +13,5 @@ export {
   CurrencyConvirter,
   PasswordGenerator,
   App,
+  Github,
 };

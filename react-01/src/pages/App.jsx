@@ -88,6 +88,18 @@ function App() {
                 Currency
               </NavLink>
             </li>
+            <li className="cursor-pointer">
+              <NavLink
+                to="/github"
+                className={({ isActive }) =>
+                  `hover:text-gray-500 ${
+                    isActive ? "text-gray-500" : "text-white"
+                  }`
+                }
+              >
+                Git-Hub
+              </NavLink>
+            </li>
           </ul>
         </li>
       </ul>
