@@ -1,20 +1,18 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
 import "./index.css";
-import App from "./App.jsx";
-import Counter from "./pages/Counter.jsx";
-import CardListing from "./pages/CardListing.jsx";
-import Background from "./pages/Background.jsx";
-import PasswordGenerator from "./pages/PasswordGenerator.jsx";
-import CurrencyConvirter from "./pages/CurrencyConvirter.jsx";
+import AppRoutes from "./AppRoutes";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <App />
-    <Counter />
-    <CardListing />
-    {/* <Background /> */}
-    <PasswordGenerator />
-    <CurrencyConvirter />
-  </StrictMode>
+// -----------------------------
+// main.jsx: React entry point
+// -----------------------------
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    {/* StrictMode: enables extra checks in development */}
+
+    {/* RouterProvider: supplies routing context to the app */}
+    <RouterProvider router={AppRoutes} />
+  </React.StrictMode>
 );
